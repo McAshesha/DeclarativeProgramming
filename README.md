@@ -29,6 +29,12 @@ Within the semester, you'll find **homeworks** and **lessons** directories to ke
 │       │   └── task.pdf     # Task description
 │       └── 2-recursion/     # ...
 ├── 2_sem/                   # 2 semester
+│   ├── homeworks/
+│   │   ├── .../
+│   ├── lectures/
+│   │   ├── ...    
+│   └── lessons/
+│       ├── .../     
 ├── haskell_book.pdf         # Haskell book for reference
 └── README.md                # This README file
 ```
