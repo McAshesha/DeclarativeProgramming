@@ -17,9 +17,9 @@ isPrime n
 -- 1.3 эффективное фибоначи
 fib :: Integer -> Integer
 fib n = f n 0 1
-  where
-    f 0 a _ = a
-    f k a b = f (k - 1) b (a + b)
+    where
+        f 0 a _ = a
+        f k a b = f (k - 1) b (a + b)
 
 -- 2.1 сумма первых n членов геом прогрессии
 sumGeometric :: Float -> Float -> Float -> Float
