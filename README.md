@@ -1,10 +1,6 @@
-Here's a README for your Haskell repository, based on the style of your imperative programming repository:
+# 📚 Declarative Programming Assignments with Haskell&SQL 🌟
 
----
-
-# 📚 Declarative Programming Assignments with Haskell 🌟
-
-Hello! I’m Ковалёв В. Я. from group 24940 ИИР, and this repository contains my solutions to various **declarative programming** tasks in Haskell. Get ready to dive into the world of functional programming!
+Hello! I’m Ковалёв В. Я. from group 24940 ИИР, and this repository contains my solutions to various **declarative programming** tasks in Haskell&SQL. Get ready to dive into the world of functional programming!
 
 ## 📂 Repository Structure
 
@@ -70,9 +66,5 @@ Each folder is organized by topics like simple functions or recursion, and each 
 
 ## 💡 Notes:
 
-Feel free to use these solutions as a reference, but don’t copy them directly! Haskell is all about understanding the concepts. If you spot a mistake or have a suggestion, feel free to open an issue!
+Feel free to use these solutions as a reference, but don’t copy them directly! Haskell&SQL is all about understanding the concepts. If you spot a mistake or have a suggestion, feel free to open an issue!
 Let the functional magic guide you! 🌟
-
----
-
-Let me know if you need any changes or additions!
