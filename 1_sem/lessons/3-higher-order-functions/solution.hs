@@ -36,7 +36,11 @@ higherOrderSum f a b | a > b = 0
                      | a == b = f b
                      | otherwise = f a + higherOrderSum f (a + 1) b
 
--- 3 заданая операция на целых от a до b
+-- 3.1 заданая операция на целых от a до b
 operationInts :: (Int -> Int -> Int) -> Int -> Int -> Int
 operationInts f a b =  if a < b then f a (operationInts f (a + 1) b) else b
 
+-- 3.2 факториал из заданой операции
+factorial :: Int -> Int
+factorial n | n <= 0 = error "Not Positive n!"
+factorial n = operationInts (*) 1 n
