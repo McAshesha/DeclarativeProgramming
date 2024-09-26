@@ -22,7 +22,7 @@ fib n = f n 0 1
         f k a b = f (k - 1) b (a + b)
 
 -- 2.1 сумма первых n членов геом прогрессии
-sumGeometric :: Float -> Float -> Float -> Float
+sumGeometric :: Float -> Float -> Int -> Float
 sumGeometric b1 q 1 = b1
 sumGeometric b1 q n
     | n < 1 = error "Not positive n!"
@@ -33,9 +33,9 @@ sumAllGeometric :: Float -> Float -> Float
 sumAllGeometric b1 q = if abs q < 1 then b1 / (1 - q) else error "q <= -1 or q >= 1"
 
 -- 2.3 наименьшее n суммы ряда геом прогрессии
-getNFromGeometric :: Float -> Float -> Float -> Float
+getNFromGeometric :: Float -> Float -> Float -> Int
 getNFromGeometric b1 q e = f b1 q e 1
     where
-        f :: Float -> Float -> Float -> Float -> Float
+        f :: Float -> Float -> Float -> Int -> Int
         f b1 q e n | abs (sumGeometric b1 q n - sumAllGeometric b1 q) < e = n
             | otherwise = f b1 q e (n + 1)
