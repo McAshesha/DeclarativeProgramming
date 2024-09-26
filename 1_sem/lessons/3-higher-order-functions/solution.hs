@@ -24,7 +24,7 @@ plusn'' n x = x + n
 
 -- 1 суммирование целых от a до b
 sumInts :: Int -> Int -> Int
-sumInts a b =  if a < b then a + sumInts (a + 1) b else b
+sumInts a b = if a < b then a + sumInts (a + 1) b else b
 
 -- 1.1 суммирование целых квадратов от a до b
 sumSquares :: Int -> Int -> Int
