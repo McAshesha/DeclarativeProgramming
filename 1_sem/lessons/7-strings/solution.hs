@@ -35,4 +35,3 @@ delAllUpper str = unwords $ foldr (\wrd acc -> if isWrdUpper wrd then acc else w
 shifr :: [Char] -> Int -> [Char]
 shifr str n = map (shiftChar n) str
     where shiftChar n c = chr $ ord c + n
-
