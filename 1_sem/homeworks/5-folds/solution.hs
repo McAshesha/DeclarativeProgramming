@@ -6,7 +6,7 @@ all' :: (a -> Bool) -> [a] -> Bool
 all' f = foldl (\x y -> f y && x) True
 
 map' :: (a -> b) -> [a] -> [b]
-map' f = foldl (\x y -> f y:x) []
+map' f = foldr (\x y -> f x:y) []
 
 concatMap' :: (a -> [b]) -> [a] -> [b]
 concatMap' f = foldl (\x y -> f y ++ x) []
@@ -21,9 +21,10 @@ unzip' :: [(a, b)] -> ([a], [b])
 unzip' = foldr (\(x, y) (z, w) -> (x:z, y:w)) ([], [])
 
 null' :: [a] -> Bool
-null' = foldl (\_ _ -> False) False -- or just: False
+null' = foldl (\_ _ -> False) True
 
 intersperse':: a -> [a] -> [a]
+intersperse' _ [] = []
 intersperse' x (y:ys) = foldl (\z w -> w:x:z) [y] ys
 
 group':: Eq a => [a] -> [[a]]
@@ -47,8 +48,8 @@ lagrange' points = foldr lagrangeTerm (const 0.0) points
     lagrangeTerm (a, b) accFunction x = accFunction x + b * basisPolynomial a x
 
     -- basisPolynomial вычисляет базисный полином l_i(x) для точки a
-    basisPolynomial :: Double -> Double -> Double
-    basisPolynomial a x = foldr (basisTerm a) (const 1.0) points -- not working
+    basisPolynomial :: Double -> (Double -> Double)
+    basisPolynomial a = foldr (basisTerm a) (const 1.0) points
 
     -- basisTerm вычисляет отдельный множитель (x - x_j) / (x_i - x_j)
     -- для полинома l_i(x), игнорируя точку, где i == j
