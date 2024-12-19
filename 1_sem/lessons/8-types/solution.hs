@@ -23,7 +23,7 @@ perimeter (Circle r) = 2 * pi * r
 perimeter (Rectangle a b) = 2 * (a + b)
 perimeter (Triangle a b c) = a + b + c
 
-isSquare :: Shape-> Bool
+isSquare :: Shape -> Bool
 isSquare (Circle _) = False
 isSquare (Triangle {}) = False
 isSquare (Rectangle a b) = a == b

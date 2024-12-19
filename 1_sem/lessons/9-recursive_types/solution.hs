@@ -41,21 +41,6 @@ tree1 = Node 6
                     (Node 5 Empty Empty))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 tree2 = Node 3
             (Node 1 Empty (Node 2 Empty Empty))
             (Node 5 (Node 4 Empty Empty) Empty)

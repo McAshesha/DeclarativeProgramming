@@ -42,9 +42,14 @@ areAnagrams str1 str2
 -- 2.4 поиск префикса
 longestCommonPrefix :: [String] -> String
 longestCommonPrefix [] = ""
-longestCommonPrefix strs = map head $ takeWhile allSame $ transpose strs
+longestCommonPrefix [x] = x
+longestCommonPrefix = foldr1 commonPrefix
     where
-        allSame xs = all (\x -> x == head xs) xs
+        commonPrefix [] _ = []
+        commonPrefix _ [] = []
+        commonPrefix (x:xs) (y:ys)
+          | x == y = x : commonPrefix xs ys
+          | otherwise = []
 
 
 -- 2.5 список анаграмм
