@@ -1,6 +1,6 @@
 # 📚 Declarative Programming Assignments with Haskell&SQL 🌟
 
-Hello! I’m Ковалёв В. Я. from group 24940 ИИР, and this repository contains my solutions to various **declarative programming** tasks in Haskell&SQL. Get ready to dive into the world of functional programming!
+Hello! I’m Kovalev V. from group 24940 IIR, and this repository contains my solutions to various **declarative programming** tasks in Haskell&SQL. Get ready to dive into the world of functional programming!
 
 ## 📂 Repository Structure
 
