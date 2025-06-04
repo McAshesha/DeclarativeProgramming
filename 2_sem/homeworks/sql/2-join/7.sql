@@ -1,0 +1,10 @@
+SELECT DISTINCT p.WARE
+FROM PRODUCT p
+EXCEPT
+SELECT DISTINCT p.WARE
+FROM PRODUCT p
+         INNER JOIN MATERIAL m
+                    ON p.RECIPE_ID = m.RECIPE_ID
+         INNER JOIN CATEGORY cat
+                    ON m.WARE = cat.WARE AND cat.CLASS <> 'Mineral'
+ORDER BY p.WARE ASC
