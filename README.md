@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-%F0%9F%9A%80%20maintenance-brightgreen?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/status-%F0%9F%9A%80%20maintenance-yellow?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/language-Haskell-purple?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/language-SQL%20%28SQLite%29-lightgrey?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/university-NSU-blue?style=for-the-badge"/>
