@@ -120,7 +120,7 @@ sqlite3 wares.sqlite3 < solution.sql
 | Hoogle           | [`Hoogle`](https://hoogle.haskell.org/)              | Instant type‑directed search engine   |
 | SQLite docs      | [`Docs`](https://www.sqlite.org/docs.html)           | Official SQL grammar & pragmas        |
 | Learn You        | [`Haskell`](http://learnyouahaskell.com/)            | Beginner‑friendly FP walkthrough      |
-| Haskell Book     | [`Book`](hakell_book.pdf)                            | Minimal Haskell ↔ SQLite bridge (WIP) |
+| Haskell Book     | [`Book`](haskell_book.pdf)                            | Minimal Haskell ↔ SQLite bridge (WIP) |
 
 ---
 
